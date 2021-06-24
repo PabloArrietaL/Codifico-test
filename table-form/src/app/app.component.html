@@ -1,0 +1,8 @@
+<div class="container d-flex justify-content-center align-items-center flex-column mt-0">
+  <section class="row">
+    <app-form (sendData)="addMovie($event)"></app-form>
+  </section>
+  <section class="row">
+    <app-table [movies]="movies" (sendIndex)="deletesMovie($event)"></app-table>
+  </section>
+</div>

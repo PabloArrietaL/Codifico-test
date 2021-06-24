@@ -1,0 +1,18 @@
+<div class="container">
+  <ng-container *ngIf="winner === ''; else endGame">
+    <h2>Player {{player | uppercase}}</h2>
+  </ng-container>
+  <ng-template #endGame>
+    <h2>Player {{winner | uppercase}} Win</h2>
+  </ng-template>
+  <div class="table">
+    <div *ngFor="let x of positions; index as i" class="row">
+      <ng-container *ngFor="let y of x; index as j">
+        <button class="button" (click)="changePlayer(i,j)" [disabled]="y.disabled || disabled">
+          <img [src]="y.player === 'o' ? 'assets/images/o.png' : y.player === 'x' ? 'assets/images/x.png' : ''">
+        </button>
+      </ng-container>
+    </div>
+  </div>
+  <button class="reset" (click)="resetGame()">Reset</button>
+</div>

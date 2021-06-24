@@ -1,0 +1,12 @@
+1.
+
+SELECT ss.companyname AS CompanyName , SUM(so.freight) AS TotalFreight, SUM(sod.total)  AS TotalCostShipped, SUM(sod.qty) AS TotalItemsShipped
+FROM Sales.Shippers ss
+	Inner Join Sales.Orders so On ss.shipperid = so.shipperid
+	Inner Join (
+		Select sod.orderid, SUM(sod.unitprice * sod.qty) as total, SUM(sod.qty) as qty
+		From Sales.OrderDetails sod
+		GROUP BY sod.orderid 
+	) sod ON sod.orderid = so.orderid
+GROUP BY ss.companyname
+ORDER BY ss.companyname;

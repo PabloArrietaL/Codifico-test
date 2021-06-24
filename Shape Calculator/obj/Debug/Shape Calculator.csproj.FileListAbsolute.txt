@@ -1,0 +1,7 @@
+D:\Descargas\Codifico\Shape Calculator\bin\Debug\Shape Calculator.exe.config
+D:\Descargas\Codifico\Shape Calculator\bin\Debug\Shape Calculator.exe
+D:\Descargas\Codifico\Shape Calculator\bin\Debug\Shape Calculator.pdb
+D:\Descargas\Codifico\Shape Calculator\obj\Debug\Shape Calculator.csproj.AssemblyReference.cache
+D:\Descargas\Codifico\Shape Calculator\obj\Debug\Shape Calculator.csproj.CoreCompileInputs.cache
+D:\Descargas\Codifico\Shape Calculator\obj\Debug\Shape Calculator.exe
+D:\Descargas\Codifico\Shape Calculator\obj\Debug\Shape Calculator.pdb
